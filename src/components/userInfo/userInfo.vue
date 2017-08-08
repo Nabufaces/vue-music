@@ -16,7 +16,7 @@
 			<div slot="icon">&#xe739;</div>
 			<div slot="left-icon">&#xe6a5;</div>
 		</cellContent>
-		<menuList listName="我创建的歌单" listCount="1" :list="listSong">
+		<menuList listName="我创建的歌单" listCount="1">
 		</menuList>
 	</div>
 </template>

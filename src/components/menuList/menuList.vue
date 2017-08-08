@@ -4,8 +4,8 @@
 			<i v-if="showFlag" class="iconfont">
 				&#xe6a7;
 			</i>
-			<i v-else class="iconfont arrow-right">
-				&#xe6a7;
+			<i v-else class="iconfont">
+				&#xe86f;
 			</i>
 			<span> {{listName}} </span>
 			<span v-if="listCount !== undefined"> ({{listCount}})</span>
@@ -17,7 +17,7 @@
 </template>
 
 <script>
-	import cellSong from '../components/cellSong/cellSong'
+	import cellSong from '../cellSong/cellSong'
 
 	export default {
 		name: 'menuList',

@@ -1,12 +1,11 @@
 <template>
 	<div class="m-bd">
-		<i class="m-icon iconfont">
-			<slot name="icon">
-			</slot>
-		</i>
+		<div class="m-img">
+			<img src="">
+		</div>
 		<div class="m-ct">
-			<span> {{listName}} </span>
-			<span v-if="listCount !== undefined"> ({{listCount}})</span>
+			<p>{{listName}}</p>
+			<p>{{listCount}}首</p>
 			<i class="iconfont">
 				<slot name="left-icon"></slot>
 			</i>
@@ -28,6 +27,6 @@
 </script>
 
 <style scoped>
-	@import './cellContent.css';
+	@import './cellSong.css';
 	@import '../../icon/iconfont.css';
 </style>

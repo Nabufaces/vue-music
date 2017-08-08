@@ -1,6 +1,9 @@
 <template>
 	<div class="m-bd">
-		<i class="m-icon" :class="iconInfo"></i>
+		<i class="m-icon iconfont">
+			<slot name="icon">
+			</slot>
+		</i>
 		<div class="m-ct">
 			<span> {{listName}} </span>
 			<span v-if="listCount !== undefined"> ({{listCount}})</span>
@@ -17,24 +20,17 @@
 				type: String,
 				required: true
 			},
-			listCount: {
-				type: Number
-			},
-			iconInfo:{
-				type: String
-			}
+			listCount: String
 		},
 		data() {
 			return {
-				listName: '',
-				listCount: 0,
-				iconInfo: ''
+				name: '',
+				count: 0
 			}
 		},
 		created() {
-			this.listName = this.listName;
-			this.listCount = this.listCount;
-			this.iconInfo = this.iconInfo;
+			this.name = this.listName;
+			this.count = this.listCount;
 		}
 	}
 </script>

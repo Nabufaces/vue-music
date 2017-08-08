@@ -1,14 +1,12 @@
 <template>
 	<div class="m-bd">
 		<div class="m-img">
-			<img src="">
+			<img :src="imgSrc">
 		</div>
 		<div class="m-ct">
-			<p>{{listName}}</p>
-			<p>{{listCount}}首</p>
-			<i class="iconfont">
-				<slot name="left-icon"></slot>
-			</i>
+			<span>{{listName}}</span>
+			<span>{{listCount}}首</span>
+			<i class="iconfont">&#xe872;</i>
 		</div>
 	</div>
 </template>
@@ -17,6 +15,10 @@
 	export default {
 		name: 'cellContent',
 		props: {
+			imgSrc: {
+				type: String,
+				required: true
+			},
 			listName: {
 				type: String,
 				required: true

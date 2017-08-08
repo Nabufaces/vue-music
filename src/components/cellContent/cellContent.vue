@@ -7,9 +7,7 @@
 		<div class="m-ct">
 			<span> {{listName}} </span>
 			<span v-if="listCount !== undefined"> ({{listCount}})</span>
-			<i class="iconfont">
-				<slot name="left-icon"></slot>
-			</i>
+			<i class="iconfont">&#xe86f;</i>
 		</div>
 	</div>
 </template>

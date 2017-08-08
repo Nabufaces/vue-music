@@ -11,7 +11,7 @@
 			<span v-if="listCount !== undefined"> ({{listCount}})</span>
 		</div>
 		<div v-if="showFlag" class="m-bd" v-for="item in list">
-			
+			<cellSong :imgSrc="item.img" :listName="item.name" :listCount="item.count"></cellSong>
 		</div>
 	</div>
 </template>
@@ -34,7 +34,7 @@
 		},
 		data() {
 			return {
-				showFlag: true
+				showFlag: true,
 			}
 		},
 		methods: {

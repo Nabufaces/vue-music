@@ -1,6 +1,6 @@
 # vue-music
 
-> A Vue.js project
+> 利用vue + vue-router + vuex + es6 + less 搭建的模仿网易云音乐的vue项目
 
 ## Build Setup
 
@@ -18,4 +18,6 @@ npm run build
 npm run build --report
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+初步效果图：
+
+![](./static/img/效果1.png)

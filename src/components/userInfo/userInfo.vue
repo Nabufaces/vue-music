@@ -14,13 +14,17 @@
 		</cellContent>
 		<menuList listName="我创建的歌单" listCount="1" :list="listSong">
 		</menuList>
+		<menuList listName="我收藏的歌单" listCount="3" :list="collectSong">
+		</menuList>
 	</div>
 </template>
 
 <script>
 	import cellContent from '../cellContent/cellContent'
 	import menuList from '../menuList/menuList'
-	import background from '../../assets/background.jpg'
+	import download_1 from '../../assets/download_1.jpg'
+	import collect_1 from '../../assets/collect_1.png'
+	import collect_2 from '../../assets/collect_2.png'
 	
 	export default {
 		name: 'userInfo',
@@ -32,9 +36,20 @@
 			return {
 				listSong: [
 					{
-						img: background,
+						img: download_1,
 						name: '我喜欢的音乐',
 						count: 74
+				}],
+				collectSong: [{
+						img: collect_1,
+						name: '高效率专注音乐',
+						count: 50,
+						authorName: 'uncleman'
+				},{
+						img: collect_2,
+						name: 'Youtube神级翻唱',
+						count: 100,
+						authorName: 'Nabufaces'
 				}]
 			}
 		}

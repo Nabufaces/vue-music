@@ -6,7 +6,11 @@
 		<div class="m-ct">
 			<div class="m-tt">
 				<p>{{listName}}</p>
-				<i class="iconfont">&#xe603;</i><span>{{listCount}}首</span>
+				<i class="iconfont">&#xe603;</i>
+				<span>{{listCount}}首  
+					<span v-show="authorName !== undefined"> by {{authorName}}
+					</span>
+				</span>
 			</div>
 			<i class="iconfont">&#xe872;</i>
 		</div>
@@ -25,7 +29,8 @@
 				type: String,
 				required: true
 			},
-			listCount: String
+			listCount: String,
+			authorName: String
 		}
 	}
 </script>

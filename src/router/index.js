@@ -10,7 +10,7 @@ export default new Router({
     },
     {
     	path: '/myMusic',
-    	component: resolve => {require(['@/components/userInfo/userInfo'],resolve)}
+    	component: resolve => {require(['@/components/myMusic/myMusic'],resolve)}
     },
     {
       path: '/findFriends'

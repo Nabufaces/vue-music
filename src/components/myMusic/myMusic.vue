@@ -27,7 +27,7 @@
 	import collect_2 from '../../assets/collect_2.png'
 	
 	export default {
-		name: 'userInfo',
+		name: 'myMusic',
 		components: {
 			cellContent,
 			menuList
@@ -57,6 +57,6 @@
 </script>
 
 <style scoped>
-	@import './userInfo.css';
+	@import './myMusic.css';
 	@import '../../icon/iconfont.css';
 </style>

@@ -1,7 +1,7 @@
 <template>
 	<div class="g-hd">
 		<div class="m-lf">
-			<i class="iconfont">&#xe699;</i>
+			<i class="iconfont" @click="showMoreModal">&#xe699;</i>
 		</div>
 		<div class="m-mn">
 			<i class="iconfont">&#xe620;</i>
@@ -15,7 +15,12 @@
 </template>
 <script>
 	export default {
-		name: 'topBar'
+		name: 'topBar',
+		methods: {
+			showMoreModal() {
+				this.$store.commit('showMoreModal');
+			}
+		}
 	}
 </script>
 

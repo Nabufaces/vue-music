@@ -6,9 +6,7 @@
 		<div class="m-mn">
 			<i class="iconfont">&#xe620;</i>
 			<i class="iconfont">&#xe662;</i>
-			<router-link to="/">
-				<i class="iconfont">&#xe61a;</i>
-			</router-link>
+			<i class="iconfont">&#xe61a;</i>
 		</div>
 		<div class="m-rt">
 			<i class="iconfont">&#xe61d;</i>

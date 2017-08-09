@@ -1,15 +1,22 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/Hello'
-import userInfo from '@/components/userInfo/userInfo'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/',
-      component: userInfo
+      path: '/findMusic'
+    },
+    {
+    	path: '/myMusic',
+    	component: resolve => {require(['@/components/userInfo/userInfo'],resolve)}
+    },
+    {
+      path: '/findFriends'
+    },
+    {
+      path: '/userAccount'
     }
   ]
 })

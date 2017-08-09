@@ -1,11 +1,13 @@
 <template>
-	<div class="m-bd">
+	<div class="m-cellSong">
 		<div class="m-img">
 			<img :src="imgSrc">
 		</div>
 		<div class="m-ct">
-			<span>{{listName}}</span>
-			<span>{{listCount}}首</span>
+			<div class="m-tt">
+				<p>{{listName}}</p>
+				<i class="iconfont">&#xe603;</i><span>{{listCount}}首</span>
+			</div>
 			<i class="iconfont">&#xe872;</i>
 		</div>
 	</div>

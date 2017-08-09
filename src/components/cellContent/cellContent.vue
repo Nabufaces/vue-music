@@ -1,5 +1,5 @@
 <template>
-	<div class="m-bd">
+	<div class="m-cellContent">
 		<i class="m-icon iconfont">
 			<slot name="icon">
 			</slot>

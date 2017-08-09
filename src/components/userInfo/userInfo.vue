@@ -20,6 +20,7 @@
 <script>
 	import cellContent from '../cellContent/cellContent'
 	import menuList from '../menuList/menuList'
+	import background from '../../assets/background.jpg'
 	
 	export default {
 		name: 'userInfo',
@@ -31,7 +32,7 @@
 			return {
 				listSong: [
 					{
-						img: '../../src/images/background.jpg',
+						img: background,
 						name: '我喜欢的音乐',
 						count: 74
 				}]

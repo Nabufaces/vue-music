@@ -2,26 +2,36 @@
 	<div class="g-bd">
 		<div class="m-userInfo">
 			<div class="m-user">
-				<img :src="user">
-				<div class="m-userName">
-					<span>{{userName}}</span><br>
-					<span class="label">Lv.{{level}}</span>
+				<div class="m-lf">
+					<img :src="user">
+					<div class="m-name">
+						<span>{{userName}}</span><br>
+						<span class="label">Lv.{{level}}</span>
+					</div>
 				</div>
-				<button class="btn"><i class="iconfont">&#xe643;签到</i></button>
+				<div class="m-rt">
+					<button class="btn">
+						<i class="iconfont">&#xe643;</i><span>签到</span>
+					</button>
+				</div>
 			</div>
+
 			<div class="m-info">
 				<div class="cell">
 					<p>动态</p>
 					<span>0</span>
 				</div>
+				<hr class="line" />
 				<div class="cell">
 					<p>关注</p>
 					<span>3</span>
 				</div>
+				<hr class="line" />
 				<div class="cell">
 					<p>粉丝</p>
 					<span>10</span>
 				</div>
+				<hr class="line" />
 				<div class="cell">
 					<i class="iconfont">&#xe678;</i>
 					<p>我的资料</p>

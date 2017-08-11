@@ -18,6 +18,15 @@ npm run build
 npm run build --report
 ```
 
-初步效果图：
+## 访问地址：
+10.240.180.218:8080/#/
 
-![](./static/img/效果1.png)
+## 初步效果图：
+
+##### 我的音乐：
+
+![](./static/img/myMusic.png)
+
+##### 账号：
+
+![](./static/img/userAccount.png)

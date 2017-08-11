@@ -20,7 +20,7 @@
 </template>
 
 <script>
-	import cellContent from '../cellContent/cellContent'
+	import cellContent from '../cell/cellContent/cellContent'
 	import menuList from '../menuList/menuList'
 	import download_1 from '../../assets/download_1.jpg'
 	import collect_1 from '../../assets/collect_1.png'

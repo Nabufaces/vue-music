@@ -1,6 +1,6 @@
 # vue-music
 
-> 利用vue + vue-router + vuex + es6 + less 搭建的模仿网易云音乐的vue项目
+> 利用vue + vue-router + vuex + es6 + Webpack + less 搭建的模仿网易云音乐的vue项目
 
 ## Build Setup
 

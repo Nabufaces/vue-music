@@ -37,5 +37,5 @@
 
 <style scoped>
 	@import './cellSong.css';
-	@import '../../icon/iconfont.css';
+	@import '../../../icon/iconfont.css';
 </style>

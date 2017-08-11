@@ -17,7 +17,7 @@
 </template>
 
 <script>
-	import cellSong from '../cellSong/cellSong'
+	import cellSong from '../cell/cellSong/cellSong'
 
 	export default {
 		name: 'menuList',

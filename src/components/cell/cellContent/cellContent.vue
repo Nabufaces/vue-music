@@ -27,5 +27,5 @@
 
 <style scoped>
 	@import './cellContent.css';
-	@import '../../icon/iconfont.css';
+	@import '../../../icon/iconfont.css';
 </style>

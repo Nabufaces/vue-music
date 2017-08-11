@@ -16,7 +16,8 @@ export default new Router({
       path: '/findFriends'
     },
     {
-      path: '/userAccount'
+      path: '/userAccount',
+      component: resolve => {require(['@/components/userAccount/userAccount'],resolve)}
     }
   ]
 })

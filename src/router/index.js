@@ -6,7 +6,9 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/findMusic'
+      path: '/findMusic',
+      component: resolve => {require(['@/components/findMusic/findMusic'],resolve)}
+    
     },
     {
     	path: '/myMusic',

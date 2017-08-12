@@ -1,6 +1,15 @@
 <template>
 	<div class="g-hd">
 		<div class="m-lf">
+			<slot name="left"></slot>
+		</div>
+		<div class="m-mn">
+			<slot name="center"></slot>
+		</div>
+		<div class="m-rt">
+			<slot name="right"></slot>
+		</div>
+		<!-- <div class="m-lf">
 			<i class="iconfont" @click="showMoreModal">&#xe699;</i>
 		</div>
 		<div class="m-mn">
@@ -10,7 +19,7 @@
 		</div>
 		<div class="m-rt">
 			<i class="iconfont">&#xe61d;</i>
-		</div>
+		</div> -->
 	</div>
 </template>
 <script>

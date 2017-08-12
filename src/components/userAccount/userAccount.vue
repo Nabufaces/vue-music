@@ -1,50 +1,60 @@
 <template>
-	<div class="g-bd">
-		<div class="m-userInfo">
-			<div class="m-user">
-				<div class="m-lf">
-					<img :src="user">
-					<div class="m-name">
-						<span>{{userName}}</span><br>
-						<span class="label">Lv.{{level}}</span>
+	<div>
+		<topBar>
+			<div slot="center">账号</div>
+			<div slot="right">
+				<i class="iconfont">&#xe6c2;</i>
+			</div>
+		</topBar>
+		<div class="g-bd">
+			<div class="m-userInfo">
+				<div class="m-user">
+					<div class="m-lf">
+						<img :src="user">
+						<div class="m-name">
+							<span>{{userName}}</span><br>
+							<span class="label">Lv.{{level}}</span>
+						</div>
+					</div>
+					<div class="m-rt">
+						<button class="btn">
+							<i class="iconfont">&#xe643;</i><span>签到</span>
+						</button>
 					</div>
 				</div>
-				<div class="m-rt">
-					<button class="btn">
-						<i class="iconfont">&#xe643;</i><span>签到</span>
-					</button>
-				</div>
-			</div>
 
-			<div class="m-info">
-				<div class="cell">
-					<p>动态</p>
-					<span>0</span>
-				</div>
-				<hr class="line" />
-				<div class="cell">
-					<p>关注</p>
-					<span>3</span>
-				</div>
-				<hr class="line" />
-				<div class="cell">
-					<p>粉丝</p>
-					<span>10</span>
-				</div>
-				<hr class="line" />
-				<div class="cell">
-					<i class="iconfont">&#xe678;</i>
-					<p>我的资料</p>
+				<div class="m-info">
+					<div class="cell">
+						<p>动态</p>
+						<span>0</span>
+					</div>
+					<hr class="line" />
+					<div class="cell">
+						<p>关注</p>
+						<span>3</span>
+					</div>
+					<hr class="line" />
+					<div class="cell">
+						<p>粉丝</p>
+						<span>10</span>
+					</div>
+					<hr class="line" />
+					<div class="cell">
+						<i class="iconfont">&#xe678;</i>
+						<p>我的资料</p>
+					</div>
 				</div>
 			</div>
+			<cellPlate :list="list_1"></cellPlate>
+			<cellPlate :list="list_2"></cellPlate>
+			<cellPlate :list="list_3"></cellPlate>
 		</div>
-		<cellPlate :list="list_1"></cellPlate>
-		<cellPlate :list="list_2"></cellPlate>
-		<cellPlate :list="list_3"></cellPlate>
 	</div>
+	
 </template>
 
 <script>
+	import topBar from '../topBar/topBar'
 	import cellPlate from '../cell/cellPlate/cellPlate'
 	import user from '../../assets/user.jpg'
 	export default {
@@ -84,6 +94,7 @@
 			}
 		},
 		components: {
+			topBar,
 			cellPlate
 		}
 	}

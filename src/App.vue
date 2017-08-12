@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <topBar></topBar>
     <router-view></router-view>
     <bottomBar></bottomBar>
     <moreModal v-if="showMoreModalFlag"></moreModal>
@@ -8,14 +7,12 @@
 </template>
 
 <script>
-import topBar from './components/topBar/topBar'
 import bottomBar from './components/bottomBar/bottomBar'
 import moreModal from './components/modal/moreModal/moreModal'
 
 export default {
     name: 'app',
     components: {
-        topBar,
         bottomBar,
         moreModal
     },

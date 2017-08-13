@@ -4,12 +4,14 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import Vuex from 'vuex'
+import VueResource from 'vue-resource'
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
 
 Vue.config.productionTip = false
 
 Vue.use(Vuex)
+Vue.use(VueResource)
 Vue.use(MintUI)
 
 const store = new Vuex.Store({

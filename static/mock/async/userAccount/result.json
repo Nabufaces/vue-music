@@ -1,0 +1,37 @@
+{
+  	"userName": "Nabufaces",
+	"user": "./static/img/user.jpg",
+  	"level": 5,
+	"dynamic": 0,
+	"follow": 5,
+	"fans": 2,
+	"cellList":[
+		[{
+			"icon_left": "email",
+			"title": "我的消息"
+		}],
+		[{
+			"icon_left": "member",
+			"title": "会员中心"
+		},{
+			"icon_left": "mall",
+			"title": "商城"
+		}],
+		[{
+			"icon_left": "settings",
+			"title": "设置"
+		},{
+	        "icon_left": "scan",
+	        "title": "扫一扫"
+		},{
+		    "icon_left": "skin",
+		    "title": "个性换肤"
+		},{
+	        "icon_left": "light",
+	        "title": "夜间模式"
+		},{
+	        "icon_left": "time",
+	        "title": "定时关闭"
+		}]
+	]
+}

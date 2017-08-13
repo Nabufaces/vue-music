@@ -10,10 +10,10 @@
 			<div class="m-userInfo">
 				<div class="m-user">
 					<div class="m-lf">
-						<img :src="user">
+						<img :src="list.user">
 						<div class="m-name">
-							<span>{{userName}}</span><br>
-							<span class="label">Lv.{{level}}</span>
+							<span>{{list.userName}}</span><br>
+							<span class="label">Lv.{{list.level}}</span>
 						</div>
 					</div>
 					<div class="m-rt">
@@ -26,17 +26,17 @@
 				<div class="m-info">
 					<div class="cell">
 						<p>动态</p>
-						<span>0</span>
+						<span>{{list.dynamic}}</span>
 					</div>
 					<hr class="line" />
 					<div class="cell">
 						<p>关注</p>
-						<span>3</span>
+						<span>{{list.follow}}</span>
 					</div>
 					<hr class="line" />
 					<div class="cell">
 						<p>粉丝</p>
-						<span>10</span>
+						<span>{{list.fans}}</span>
 					</div>
 					<hr class="line" />
 					<div class="cell">
@@ -45,9 +45,9 @@
 					</div>
 				</div>
 			</div>
-			<cellPlate :list="list_1"></cellPlate>
-			<cellPlate :list="list_2"></cellPlate>
-			<cellPlate :list="list_3"></cellPlate>
+			<div v-for="item in list.cellList">
+				<cellPlate :list="item"></cellPlate>
+			</div>
 		</div>
 	</div>
 	
@@ -56,41 +56,19 @@
 <script>
 	import topBar from '../topBar/topBar'
 	import cellPlate from '../cell/cellPlate/cellPlate'
-	import user from '../../assets/user.jpg'
 	export default {
 		name: 'userAccount',
+		created() {
+			this.$http.get('./static/mock/async/userAccount/result.json').then((response) => {
+				this.$data.list = response.data;
+				console.log(response)
+			}).catch((response) => {
+				console.log(response)
+			})
+		},
 		data() {
 			return {
-				userName: 'Nabufaces',
-				user: user,
-				level: 5,
-				list_1: [{
-					icon_left: "email",
-					title: "我的消息"
-				}],
-				list_2: [{
-					icon_left: "member",
-					title: "会员中心"
-				},{
-					icon_left: "mall",
-					title: "商城"
-				}],
-				list_3: [{
-					icon_left: "settings",
-					title: "设置"
-				},{
-					icon_left: "scan",
-					title: "扫一扫"
-				},{
-					icon_left: "skin",
-					title: "个性换肤"
-				},{
-					icon_left: "light",
-					title: "夜间模式"
-				},{
-					icon_left: "time",
-					title: "定时关闭"
-				}]
+				list: {}
 			}
 		},
 		components: {

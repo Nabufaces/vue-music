@@ -61,7 +61,6 @@
 		created() {
 			this.$http.get('./static/mock/async/userAccount/result.json').then((response) => {
 				this.$data.list = response.data;
-				console.log(response)
 			}).catch((response) => {
 				console.log(response)
 			})
@@ -78,7 +77,4 @@
 	}
 </script>
 
-<style scoped>
-	@import './userAccount.css';
-	@import '../../icon/iconfont.css';
-</style>
+<style src="./userAccount.css" scoped></style>

@@ -33,7 +33,4 @@
 	}
 </script>
 
-<style scoped>
-	@import './bottomBar.css';
-	@import '../../icon/iconfont.css';
-</style>
+<style src="./bottomBar.css" scoped></style>

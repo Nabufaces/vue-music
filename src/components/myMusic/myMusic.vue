@@ -68,7 +68,4 @@
 	}
 </script>
 
-<style scoped>
-	@import './myMusic.css';
-	@import '../../icon/iconfont.css';
-</style>
+<style src="./myMusic.css" scoped></style>

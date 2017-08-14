@@ -35,7 +35,4 @@
 	}
 </script>
 
-<style scoped>
-	@import './cellSong.css';
-	@import '../../../icon/iconfont.css';
-</style>
+<style src="./cellSong.css" scoped></style>

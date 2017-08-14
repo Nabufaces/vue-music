@@ -32,6 +32,22 @@
 		},{
 	        "icon_left": "time",
 	        "title": "定时关闭"
+		}],
+		[{
+			"icon_left": "settings",
+			"title": "设置"
+		},{
+	        "icon_left": "scan",
+	        "title": "扫一扫"
+		},{
+		    "icon_left": "skin",
+		    "title": "个性换肤"
+		},{
+	        "icon_left": "light",
+	        "title": "夜间模式"
+		},{
+	        "icon_left": "time",
+	        "title": "定时关闭"
 		}]
 	]
 }

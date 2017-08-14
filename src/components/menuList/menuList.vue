@@ -45,7 +45,4 @@
 	}
 </script>
 
-<style scoped>
-	@import './menuList.css';
-	@import '../../icon/iconfont.css';
-</style>
+<style src="./menuList.css" scoped></style>

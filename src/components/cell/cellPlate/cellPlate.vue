@@ -42,7 +42,4 @@
 	}
 </script>
 
-<style scoped>
-	@import './cellPlate.css';
-	@import '../../../icon/iconfont.css';
-</style>
+<style src="./cellPlate.css" scoped></style>

@@ -6,20 +6,39 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/findMusic',
-      component: resolve => {require(['@/components/findMusic/findMusic'],resolve)}
-    
+        path: '/',
+        redirect: '/findMusic'
     },
     {
-    	path: '/myMusic',
-    	component: resolve => {require(['@/components/myMusic/myMusic'],resolve)}
+        path: '/findMusic',
+        component: resolve => {require(['@/components/findMusic/findMusic'],resolve)},
+        redirect: '/findMusic/personalRecommend',
+        children: [
+          {
+              path: '/findMusic/personalRecommend',
+              component: resolve => {require(['@/components/personalRecommend/personalRecommend'],resolve)}
+          },
+          {
+              path: '/findMusic/songMenu',
+          },
+          {
+              path: '/findMusic/hostStation',
+          },
+          {
+              path: '/findMusic/rankList',
+          }
+        ]
     },
     {
-      path: '/findFriends'
+      	path: '/myMusic',
+      	component: resolve => {require(['@/components/myMusic/myMusic'],resolve)}
     },
     {
-      path: '/userAccount',
-      component: resolve => {require(['@/components/userAccount/userAccount'],resolve)}
+        path: '/findFriends'
+    },
+    {
+        path: '/userAccount',
+        component: resolve => {require(['@/components/userAccount/userAccount'],resolve)}
     }
   ]
 })

@@ -49,7 +49,4 @@
 	}
 </script>
 
-<style scoped>
-	@import './moreModal.css';
-	@import '../../../icon/iconfont.css';
-</style>
+<style src="./moreModal.css" scoped></style>

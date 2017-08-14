@@ -25,7 +25,4 @@
 	}
 </script>
 
-<style scoped>
-	@import './cellContent.css';
-	@import '../../../icon/iconfont.css';
-</style>
+<style src="./cellContent.css" scoped></style>

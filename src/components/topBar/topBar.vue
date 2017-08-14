@@ -33,7 +33,4 @@
 	}
 </script>
 
-<style scoped>
-  @import './topBar.css';
-  @import '../../icon/iconfont.css';
-</style>
+<style src="./topBar.css" scoped></style>

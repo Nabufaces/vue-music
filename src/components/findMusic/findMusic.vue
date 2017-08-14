@@ -12,16 +12,16 @@
 			</div>
 		</topBar>
 		<div class="m-nav">
-			<router-link to="/findMusic/personalRecommend">
+			<router-link to="/findMusic/personalRecommend" tag="div">
 				<span>个性推荐</span>
 			</router-link>
-			<router-link to="/findMusic/songMenu">
+			<router-link to="/findMusic/songMenu" tag="div">
 				<span>歌单</span>
 			</router-link>
-			<router-link to="/findMusic/hostStation">
+			<router-link to="/findMusic/hostStation" tag="div">
 				<span>主播电台</span>
 			</router-link>
-			<router-link to="/findMusic/rankList">
+			<router-link to="/findMusic/rankList" tag="div">
 				<span>排行榜</span>
 			</router-link>
 		</div>

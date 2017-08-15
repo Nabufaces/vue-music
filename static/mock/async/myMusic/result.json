@@ -1,0 +1,22 @@
+{
+	"listSong": [
+	{
+		"img": "./static/img/download_1.jpg",
+		"name": "我喜欢的音乐",
+		"count": 74,
+		"id": 3
+	}],
+	"collectSong": [{
+		"img": "./static/img/collect_1.png",
+		"name": "高效率专注音乐",
+		"count": 50,
+		"authorName": "uncleMan",
+		"id": 1
+	},{
+		"img": "./static/img/collect_2.png",
+		"name": "Youtube神级翻唱",
+		"count": 100,
+		"authorName": "Nabufaces",
+		"id": 2
+	}]
+}

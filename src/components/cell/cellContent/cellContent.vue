@@ -20,7 +20,7 @@
 				type: String,
 				required: true
 			},
-			listCount: String
+			listCount: Number
 		}
 	}
 </script>

@@ -31,7 +31,12 @@ export default new Router({
     },
     {
       	path: '/myMusic',
-      	component: resolve => {require(['@/components/myMusic/myMusic'],resolve)}
+      	component: resolve => {require(['@/components/myMusic/myMusic'],resolve)},
+        children: [
+          {
+            path: '/myMusic/musicList'
+          }
+        ]
     },
     {
         path: '/findFriends'
